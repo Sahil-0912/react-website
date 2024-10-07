@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.7;
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero_1.jpg.webp);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0cm;
+    background-position: fixed;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    transition: all 1s linear;
+    transform: translateY(0px);
+}
+
+.header-scrolled {
+    background-color: #fff;
+    transition: all 1s linear !important;
+    box-shadow: 0 0 10px #000;
+}
+
+.header-scrolled .nav-link {
+    color: #000 !important;
+    transition: 0.4s linear all;
+}
+
+.header-scrolled .nav-link:hover {
+    color:#007bff !important;
+    border-bottom-color:#007bff!important;
+}
+.header-scrolled h4 {   
+    color: #000 !important;
+}
+
+.navbar h4 {
+    padding-left: 5%;
+    font-size: 30px !important;
+    font-weight: 900;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: "Work Sans" !important;
+}
+
+.navbar h4::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar a {
+    font-size: 15px;
+    margin-top: 5%;
+    /* color: #6c757d !important; */
+    transition: .3s all ease;
+    color: rgba(255, 255, 255, 0.7) !important
+}
+
+.navbar a:hover {
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.creative h3 {
+    color: #fff;
+    margin-top: 10%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; */
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase !important;
+    line-height: 55px;
+}
+
+.creative h3::selection {
+    background-color: black;
+    color: #fff;
+}
+
+.creative br::selection {
+    background-color: black;
+    color: #fff;
+}
+
+.creative .btn {
+    height: 40px;
+    width: 140px;
+    /* background: #007bff; */
+    border-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: #333333;
+    /* height: 100vh; */
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+footer h4::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+footer p {
+    color: #737373;
+    /* font-size: 0.8rem; */
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer p::selection {
+    background-color: #000000;
+    color: #fff;
+}
+
+footer br::selection {
+    background-color: #000000;
+    color: #fff;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 30px;
+    transition: 0.5s ease-in;
+}
+
+footer ul li:hover {
+    color: #fff;
+}
+
+footer ul li::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+footer i {
+    font-size: 20px;
+    border: none;
+    color: #737373;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+footer i:hover {
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+/* footer .input-group input {
+    color: #333333 !important;
+    border: 1px #fff;
+} */
+
+/* .foot-input input{
+    border: 1px red;
+} */
+
+.team h4 {
+    color: #007bff;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.team h4::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.team p {
+    font-size: 18px;
+}
+
+.team p::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.team br::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.team-card {
+    overflow: hidden;
+
+}
+
+.team-card .team-icon {
+    transform: translateX(-100%);
+    height: 74.5%;
+    width: 40px;
+    background-color: #007bff;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.8s ease all;
+    color: #fff;
+}
+
+.team-card:hover .team-icon {
+    transform: translateX(0%);
+}
+
+.team-card h4 {
+    font-size: 18px;
+    color: #000000;
+}
+
+.team-card h4::selection {
+    background-color: #000000;
+    color: #fff;
+}
+
+.team-card h5::selection {
+    background-color: #000000;
+    color: #fff;
+}
+
+.team-card h5 {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.team-card img {
+    height: 250px;
+    border-style: none;
+}
+
+.foot-input input {
+    background-color: #333333;
+    border-radius: 20px;
+    border-color: 1px #333333;
+}
+
+.foot-input input::placeholder {
+    color: #737373;
+}
+
+.foot-input span {
+    border-radius: 20px;
+}
+
+footer h6 i {
+    color: red;
+}
+
+.services {
+    background-color: #f8f9fa;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.services h4 {
+    color: #007bff;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.services h4::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.service-card .card {
+    border-style: none;
+}
+
+.service-card h3 {
+    color: #000;
+    font-size: 20px;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.service-card i {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.service-card p {
+    color: #737373;
+    font-size: 15px;
+}
+
+.service-card span {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.service-card h3::selection {
+    background-color: #000000;
+    color: #fff;
+}
+
+.service-card p::selection {
+    background-color: #000000;
+    color: #fff;
+}
+
+.service-card span::selection {
+    background-color: #000000;
+    color: #fff;
+}
+
+.service-card i {
+    padding: 10px;
+    font-size: 35px;
+}
+
+.contact {
+    background-color: #f8f9fa;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.contact h5 {
+    color: #000;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.contact input {
+    border-radius: 20px;
+}
+
+.contact textarea {
+    border-radius: 25px;
+}
+
+.contact label {
+    font-size: 15px;
+}
+
+.contact h4 {
+    color: #007bff;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.contact h4::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact p::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact i {
+    color: #007bff;
+}
+
+.contact h6 {
+    color: #007bff;
+}
+
+.contact h6::selection {
+    background-color: #000;
+    color: #fff;
+}
